@@ -1,0 +1,28 @@
+#me {
+    position: relative;
+    display: flow-root;
+    width: 85%;
+}
+
+#my-img-frame {
+    float: left;
+    height: 150px;
+    padding: 0px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#my-img-frame img {
+    border-radius: 10px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#my-img-frame:hover img {
+    transform: rotateY(360deg);
+}
+
+#self-description {
+    padding-left: 200px;
+}

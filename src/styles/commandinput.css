@@ -1,0 +1,8 @@
+#command-input {
+
+}
+
+#command-input>input {
+    width: 95%;
+    border: none;
+}

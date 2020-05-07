@@ -1,0 +1,20 @@
+#terminal {
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    opacity: 0.9;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.terminalTitle {
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+.greetingsIntro {
+    margin-bottom: 40px;
+}

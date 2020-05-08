@@ -1,0 +1,30 @@
+.education {
+    display: flow-root;
+    width: 85%;
+    background-color: yellowgreen;
+}
+
+.school-img-frame {
+    width: 200px;
+    height: 130px;
+    float: left;
+}
+
+.school-item img {
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.school-img-frame:hover img {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.school-info {
+    padding-left: 100px;
+}
+
+.school-item {
+    margin-bottom: 20px;
+}

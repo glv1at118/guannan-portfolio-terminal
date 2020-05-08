@@ -2,6 +2,11 @@
     position: relative;
     display: flow-root;
     width: 85%;
+    background-color: #33bbff;
+}
+
+#me .title {
+    transform: translateY(-8px);
 }
 
 #my-img-frame {
@@ -16,11 +21,12 @@
     border-radius: 10px;
     transition-property: all;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
+    box-shadow: 5px 2px #333333;
 }
 
 #my-img-frame:hover img {
-    transform: rotateY(360deg);
+    transform: scale(1.05);
 }
 
 #self-description {

@@ -1,0 +1,21 @@
+#contact {
+
+}
+
+#online-msg .part1, #online-msg .part2, #online-msg .part3 {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+#online-msg .part2 textarea {
+    max-height: 300px;
+    min-height: 100px;
+}
+
+#online-msg .part3 button {
+    width: 40%;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}

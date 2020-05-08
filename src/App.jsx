@@ -17,7 +17,7 @@ export default class App extends React.Component {
   //     minWidth: 200.00,
   //     scale: 1.00,
   //     scaleMobile: 1.00,
-  //     backgroundColor: 0xe2e2e2,
+  //     backgroundColor: 0xcccccc,
   //     color: 0x8bff00
   //   });
   // }

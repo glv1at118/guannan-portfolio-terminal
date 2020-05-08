@@ -14,6 +14,10 @@ export default class CurrentListedItems extends React.Component {
             <ul>
                 <li>
                     <Contact></Contact>
+                    <Education></Education>
+                    <Me></Me>
+                    <Unrecognized></Unrecognized>
+                    <Help></Help>
                 </li>
             </ul>
         );

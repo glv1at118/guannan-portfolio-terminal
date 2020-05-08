@@ -7,7 +7,7 @@ export default class Help extends React.Component {
     }
     render() {
         return (
-            <ul>
+            <ul id="my-help">
                 <li className="help-title">Available commands (type or click):</li>
                 <li className="help-item">
                     <span className="help-cmd">'me'</span>: Brief introduction of me. <button type="button" className="nes-btn is-primary">ME</button>

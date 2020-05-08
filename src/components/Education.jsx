@@ -4,7 +4,7 @@ import '../styles/education.css';
 export default class Education extends React.Component {
     render() {
         return (
-            <ul>
+            <ul id="my-edu">
                 <li className="school-item">
                     <div className="nes-container is-rounded education">
                         <div className="school-img-frame">

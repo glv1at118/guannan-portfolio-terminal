@@ -1,5 +1,38 @@
 #contact {
+    margin-top: 75px;
+}
 
+#contact-links {
+    background-color: yellow;
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 0rem 1rem;
+    background-color: #33bbff;
+}
+
+#contact-links i {
+    font-size: 22px;
+    color: darkblue;
+}
+
+#contact-links a {
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    color: darkred;
+    text-decoration: none;
+}
+
+#contact-links a:hover {
+    color: red;
+}
+
+#contact-links a.last-anchor {
+    margin-bottom: 0px;
+}
+
+#divider-text {
+    margin: 15px 0px;
 }
 
 #online-msg .part1, #online-msg .part2, #online-msg .part3 {

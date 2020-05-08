@@ -1,7 +1,7 @@
 import React from 'react';
-import RINGS from 'vanta/dist/vanta.rings.min.js';
-import "./styles/app.css";
+import HALO from 'vanta/dist/vanta.halo.min.js';
 import Terminal from './components/Terminal.jsx';
+import "./styles/app.css";
 
 export default class App extends React.Component {
   // constructor() {
@@ -9,16 +9,15 @@ export default class App extends React.Component {
   //   this.vantaRef = React.createRef();
   // }
   // componentDidMount() {
-  //   this.vantaEffect = RINGS({
+  //   this.vantaEffect = HALO({
   //     el: this.vantaRef.current,
   //     mouseControls: true,
   //     touchControls: true,
+  //     backgroundColor: 0x42400,
   //     minHeight: 200.00,
   //     minWidth: 200.00,
-  //     scale: 1.00,
-  //     scaleMobile: 1.00,
-  //     backgroundColor: 0xcccccc,
-  //     color: 0x8bff00
+  //     amplitudeFactor: 2.50,
+  //     size: 2.00
   //   });
   // }
   // componentWillUnmount() {

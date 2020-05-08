@@ -1,0 +1,16 @@
+#my-exp {
+    margin-top: 75px;
+}
+
+#my-exp .title {
+    transform: translateY(-8px);
+}
+
+.experience {
+    width: 85%;
+    background-color: coral;
+}
+
+.exp-item {
+    margin-bottom: 20px;
+}

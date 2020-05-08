@@ -18,7 +18,6 @@ export default class Me extends React.Component {
             this.setState({
                 selfIntroString: this.state.selfIntroString + currCharStr
             });
-            console.log(i);
             if (i === strArr.length - 1) {
                 clearInterval(timer);
             } else {

@@ -9,27 +9,27 @@ export default class Contact extends React.Component {
         return (
             <div id="contact">
                 <div id="contact-links" className="nes-container is-rounded">
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                     <a href="https://github.com/glv1at118" target="_blank">
-                        visit <i class="fas fa-external-link-alt"></i>
+                        visit <i className="fas fa-external-link-alt"></i>
                     </a><br />
 
-                    <i class="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in"></i>
                     <a href="https://www.linkedin.com/in/guannan-lyu-001133127/" target="_blank">
-                        visit <i class="fas fa-external-link-alt"></i>
+                        visit <i className="fas fa-external-link-alt"></i>
                     </a><br />
 
-                    <i class="far fa-envelope"></i>
+                    <i className="far fa-envelope"></i>
                     <a href="mailto:guannanlv@gmail.com" target="_blank">
-                        guannanlv@gmail.com <i class="fas fa-external-link-alt"></i>
+                        guannanlv@gmail.com <i className="fas fa-external-link-alt"></i>
                     </a><br />
 
-                    <i class="fas fa-mobile-alt"></i>
+                    <i className="fas fa-mobile-alt"></i>
                     <a href="#" target="_blank" className="last-anchor">
-                        289-639-3269 <i class="fas fa-external-link-alt"></i>
+                        289-639-3269 <i className="fas fa-external-link-alt"></i>
                     </a><br />
                 </div>
-                <div id="divider-text">Or leave an online message:</div>
+                <div id="divider-text">Or leave me an online message:</div>
                 <div id="online-msg">
                     <form action="https://formspree.io/mrgygjal" method="POST" target="_blank">
                         <div className="part1">

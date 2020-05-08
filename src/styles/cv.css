@@ -1,0 +1,21 @@
+#cv {
+    width: 35%;
+    margin-top: 75px;
+}
+
+#cv i {
+    font-size: 22px;
+    color: darkblue;
+}
+
+#cv a {
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    color: darkred;
+    text-decoration: none;
+}
+
+#cv a:hover {
+    color: red;
+}

@@ -13,11 +13,11 @@ export default class CurrentListedItems extends React.Component {
         return (
             <ul>
                 <li>
-                    <Contact></Contact>
+                    {/* <Contact></Contact>
                     <Education></Education>
                     <Me></Me>
                     <Unrecognized></Unrecognized>
-                    <Help></Help>
+                    <Help></Help> */}
                 </li>
             </ul>
         );

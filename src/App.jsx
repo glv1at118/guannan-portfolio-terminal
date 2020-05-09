@@ -1,34 +1,20 @@
 import React from 'react';
-import HALO from 'vanta/dist/vanta.halo.min.js';
 import Terminal from './components/Terminal.jsx';
 import GitCat from './components/GitCat.jsx';
 import "./styles/app.css";
 
 export default class App extends React.Component {
-  constructor() {
-    super();
-    this.vantaRef = React.createRef();
-  }
-  componentDidMount() {
-    // this.vantaEffect = HALO({
-    //   el: this.vantaRef.current,
-    //   mouseControls: true,
-    //   touchControls: true,
-    //   backgroundColor: 0x42400,
-    //   minHeight: 200.00,
-    //   minWidth: 200.00,
-    //   amplitudeFactor: 2.50,
-    //   size: 2.00
-    // });
-  }
-  componentWillUnmount() {
-    // if (this.vantaEffect) {
-    //   this.vantaEffect.destroy();
-    // }
-  }
   render() {
     return (
-      <div ref={this.vantaRef} className="app">
+      // <div className="app">
+      //   <GitCat></GitCat>
+      //   <Terminal></Terminal>
+      // </div>
+
+      <div className="app">
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
         <GitCat></GitCat>
         <Terminal></Terminal>
       </div>
@@ -52,4 +38,8 @@ Terminal 这个组件受到影响。虽然 Terminal 组件里的内容并没有�
 App 不会调用自己的 render 函数（而 GitCat 则是每次更新时调用自己的 render 函数）。
 App 不会更新，自然 Terminal 组件就不再受影响了。Terminal 的 componentDidUpdate
 也不会被调用，自然不会出现上述的 bug 了。
+
+而在使用 react-redux之后，Terminal组件因为没有本地 state，所以唯一能够触发它更新的，
+只有 Redux store 中通过 connect 给它的那一部分 state。只有那一部分 state更新了，
+Terminal组件才会更新。所以这也与 GitCat 组件没有任何关系了。
 */

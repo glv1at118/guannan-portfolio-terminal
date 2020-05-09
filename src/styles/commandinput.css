@@ -1,8 +1,13 @@
-#command-input {
-
+#command-input>input {
+    width: 80%;
+    border: none;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
-#command-input>input {
-    width: 95%;
-    border: none;
+@media only screen and (max-width: 800px) {
+    #command-input>input {
+        font-size: 12px;
+    }
 }

@@ -4,6 +4,9 @@
 
 #my-apps .title {
     transform: translateY(-8px);
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 #my-apps a {
@@ -28,6 +31,9 @@
 .side-app {
     width: 85%;
     background-color: orange;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 .app-img-frame {
@@ -42,6 +48,9 @@
 
 .app-item {
     margin-bottom: 20px;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 .app-item img {
@@ -54,4 +63,27 @@
 .app-info {
     display: flow-root;
     padding-left: 10px;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+@media only screen and (max-width: 800px) {
+    .app-img-frame {
+        display: none;
+    }
+    .side-app {
+        width: 98%;
+        padding: 0.5rem!important;
+    }
+    .app-info {
+        padding-left: 0px;
+        font-size: 12px;
+    }
+    #my-apps .title {
+        font-size: 14px;
+    }
+    .app-item {
+        margin-bottom: 40px;
+    }
 }

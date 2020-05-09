@@ -1,5 +1,8 @@
 #my-help {
     margin-top: 75px;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 .help-title {
@@ -12,4 +15,11 @@
 
 .help-cmd {
     color: blue;
+}
+
+@media only screen and (max-width: 800px) {
+    #my-help {
+        font-size: 12px;
+        text-align: right;
+    }
 }

@@ -67,7 +67,7 @@ export default class CommandInput extends React.Component {
         return (
             <div id="command-input">
                 >&nbsp;
-                <input type="text" spellCheck="false" placeholder="commands here..." value={this.state.currentCommand} onChange={this.updateCommand} onKeyUp={this.enterCommand} />
+                <input type="text" spellCheck="false" placeholder="commands..." value={this.state.currentCommand} onChange={this.updateCommand} onKeyUp={this.enterCommand} />
             </div>
         );
     }

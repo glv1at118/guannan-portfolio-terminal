@@ -18,12 +18,12 @@ export default class Contact extends React.Component {
 
                     <i className="nes-icon gmail"></i>
                     <a href="mailto:guannanlv@gmail.com" target="_blank" rel="noopener noreferrer">
-                        guannanlv@gmail.com <i className="fas fa-external-link-alt"></i>
+                        <span className="email-desktop">guannanlv@gmail.com</span><span className="email-mobile">email</span> <i className="fas fa-external-link-alt"></i>
                     </a><br />
 
                     <i className="nes-icon whatsapp"></i>
                     <a href="/" target="_blank" rel="noopener noreferrer">
-                        289-639-3269 <i className="fas fa-external-link-alt"></i>
+                        <span className="phone-desktop">289-639-3269</span><span className="phone-mobile">phone</span> <i className="fas fa-external-link-alt"></i>
                     </a><br />
                 </div>
                 <div id="divider-text">Or leave me an online message:</div>
@@ -32,8 +32,14 @@ export default class Contact extends React.Component {
                         <div className="part1">
                             <input type="text" name="_replyto" placeholder="What's your email?" className="nes-input" />
                         </div>
+                        <div className="part1-mobile">
+                            <input type="text" name="_replyto" placeholder="email..." className="nes-input" />
+                        </div>
                         <div className="part2">
                             <textarea name="message" placeholder="What's your message?" className="nes-textarea"></textarea>
+                        </div>
+                        <div className="part2-mobile">
+                            <textarea name="message" placeholder="message..." className="nes-textarea"></textarea>
                         </div>
                         <div className="part3">
                             <button type="submit" className="nes-btn is-warning">Send Message</button>

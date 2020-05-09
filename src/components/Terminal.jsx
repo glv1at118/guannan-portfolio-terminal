@@ -72,6 +72,9 @@ export default class Terminal extends React.Component {
                     <div id="loading-text-container" className="nes-container is-rounded">
                         Loading Terminal{this.state.terminalLoadingEllipsis}
                     </div>
+                    <div id="loading-text-container-mobile" className="nes-container is-rounded">
+                        Loading<br />Terminal{this.state.terminalLoadingEllipsis}
+                    </div>
                 </div>
                 <p className="terminalTitle">GUANNAN'S TERMINAL VERSION 2.077 BETA - ALL RIGHTS RESERVED</p>
                 <p className="greetingsIntro">{this.state.introStringGrowing}</p>

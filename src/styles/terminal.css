@@ -14,10 +14,16 @@
     padding-bottom: 5px;
     border-bottom: 2px solid black;
     text-align: right;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 .greetingsIntro {
     margin-bottom: 40px;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 #terminal-loading-cover {
@@ -33,9 +39,35 @@
 }
 
 #loading-text-container {
-    width: 50%;
+    width: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
+}
+
+#loading-text-container-mobile {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .terminalTitle {
+        font-size: 12px;
+    }
+    .greetingsIntro {
+        font-size: 12px;
+    }
+    #loading-text-container {
+        display: none;
+    }
+    #loading-text-container-mobile {
+        font-size: 12px;
+        display: block;
+    }
 }

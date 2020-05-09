@@ -11,14 +11,14 @@ export default class GitCat extends React.Component {
                 "Feels a bit messy? Type 'cls'.",
                 "How do you like this design?",
                 "I am Guannan's robot cat, how can I help?",
-                "More functions to be implemented...",
+                "More functions to be constructed...",
                 "Stay safe during this COVID-19 time!",
                 "Have some feedback? Type 'con'.",
                 "Welcome to my portfolio page, do you like it?",
                 "Get lost? Type 'help' to see commands...",
                 "Zzzz....Zzzz....",
                 "Busy coding, no time to talk...",
-                "Life is a journey of learning new stuff."
+                "Life is a journey of learning."
             ],
             chatBubbleVisibility: "hidden",
             randomMsgId: 0,

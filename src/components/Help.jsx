@@ -80,9 +80,6 @@ class Help extends React.Component {
                 <li className="help-item">
                     <span className="help-cmd">'cls'</span>: Clear the terminal. <button type="button" className="nes-btn is-warning" onClick={this.clearTerminal}>CLS</button>
                 </li>
-                <li className="help-item">
-                    <span className="help-cmd">'???'</span>: ???????????????? <button type="button" className="nes-btn is-primary">???</button>
-                </li>
             </ul>
         );
     }
@@ -94,6 +91,6 @@ let ConnectedHelp = connect(null, {
     triggerTerminalScroll: triggerTerminalScroll
 })(Help);
 
-export default ConnectedHelp; 
+export default ConnectedHelp;
 // 对于 react-redux 连接的组件，首字母必须大写。
 // 如果用标签形式效用，更需要首字母都大写。

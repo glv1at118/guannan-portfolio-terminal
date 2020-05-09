@@ -1,8 +1,8 @@
 import React from 'react';
 import "../styles/commandinput.css";
 
-import store from '../redux/store.js';
 import { componentEnterStack, clearStack } from '../redux/actions.js';
+import { connect } from 'react-redux';
 
 import Contact from './Contact';
 import Cv from './Cv';
@@ -13,7 +13,7 @@ import Unrecognized from './Unrecognized';
 import Experience from './Experience';
 import MyApps from './MyApps';
 
-export default class CommandInput extends React.Component {
+class CommandInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,35 +27,35 @@ export default class CommandInput extends React.Component {
     }
     enterCommand = (event) => {
         if (event.keyCode === 13) {
-            store.dispatch(componentEnterStack(`> ${this.state.currentCommand}`));
+            this.props.componentEnterStack(`> ${this.state.currentCommand}`);
             let command = this.state.currentCommand.toLowerCase();
             switch (command) {
                 case "me":
-                    store.dispatch(componentEnterStack(<Me></Me>));
+                    this.props.componentEnterStack(<Me></Me>);
                     break;
                 case "edu":
-                    store.dispatch(componentEnterStack(<Education></Education>));
+                    this.props.componentEnterStack(<Education></Education>);
                     break;
                 case "app":
-                    store.dispatch(componentEnterStack(<MyApps></MyApps>));
+                    this.props.componentEnterStack(<MyApps></MyApps>);
                     break;
                 case "exp":
-                    store.dispatch(componentEnterStack(<Experience></Experience>));
+                    this.props.componentEnterStack(<Experience></Experience>);
                     break;
                 case "cv":
-                    store.dispatch(componentEnterStack(<Cv></Cv>));
+                    this.props.componentEnterStack(<Cv></Cv>);
                     break;
                 case "con":
-                    store.dispatch(componentEnterStack(<Contact></Contact>));
+                    this.props.componentEnterStack(<Contact></Contact>);
                     break;
                 case "help":
-                    store.dispatch(componentEnterStack(<Help></Help>));
+                    this.props.componentEnterStack(<Help></Help>);
                     break;
                 case "cls":
-                    store.dispatch(clearStack());
+                    this.props.clearStack();
                     break;
                 default:
-                    store.dispatch(componentEnterStack(<Unrecognized></Unrecognized>));
+                    this.props.componentEnterStack(<Unrecognized></Unrecognized>);
                     break;
             }
             this.setState({
@@ -72,3 +72,11 @@ export default class CommandInput extends React.Component {
         );
     }
 }
+
+let mapDispatchToProps = {
+    componentEnterStack: componentEnterStack,
+    clearStack: clearStack
+};
+
+let connector = connect(null, mapDispatchToProps);
+export default connector(CommandInput);

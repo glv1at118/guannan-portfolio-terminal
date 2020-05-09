@@ -9,32 +9,32 @@ import Experience from './Experience';
 import MyApps from './MyApps';
 
 import { componentEnterStack, clearStack } from '../redux/actions.js';
-import store from '../redux/store.js';
+import { connect } from 'react-redux';
 
-export default class Help extends React.Component {
+class Help extends React.Component {
     showMe = () => {
-        store.dispatch(componentEnterStack(<Me></Me>));
+        this.props.componentEnterStack(<Me></Me>);
     }
     showCv = () => {
-        store.dispatch(componentEnterStack(<Cv></Cv>));
+        this.props.componentEnterStack(<Cv></Cv>);
     }
     showExp = () => {
-        store.dispatch(componentEnterStack(<Experience></Experience>));
+        this.props.componentEnterStack(<Experience></Experience>);
     }
     showMyApps = () => {
-        store.dispatch(componentEnterStack(<MyApps></MyApps>));
+        this.props.componentEnterStack(<MyApps></MyApps>);
     }
     showCon = () => {
-        store.dispatch(componentEnterStack(<Contact></Contact>));
+        this.props.componentEnterStack(<Contact></Contact>);
     }
     showEdu = () => {
-        store.dispatch(componentEnterStack(<Education></Education>));
+        this.props.componentEnterStack(<Education></Education>);
     }
     showHelp = () => {
-        store.dispatch(componentEnterStack(<Help></Help>));
+        this.props.componentEnterStack(<Help></Help>);
     }
     clearTerminal = () => {
-        store.dispatch(clearStack());
+        this.props.clearStack();
     }
     render() {
         return (
@@ -71,3 +71,8 @@ export default class Help extends React.Component {
         );
     }
 }
+
+export default connect(null, {
+    componentEnterStack: componentEnterStack,
+    clearStack: clearStack
+})(Help);

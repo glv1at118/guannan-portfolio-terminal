@@ -1,14 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-import store from '../redux/store.js';
-
-export default class CurrentListedItems extends React.Component {
+class CurrentListedItems extends React.Component {
     render() {
         return (
             <div>
                 <ul>
                     {
-                        store.getState().guannanStack.map((currItem, index) => (
+                        this.props.guannanStack.map((currItem, index) => (
                             <li key={index}>{currItem}</li>
                         ))
                     }
@@ -17,3 +16,11 @@ export default class CurrentListedItems extends React.Component {
         );
     }
 }
+
+const mapStateToProps = function (state) {
+    return {
+        guannanStack: state.guannanStack
+    };
+};
+
+export default connect(mapStateToProps, null)(CurrentListedItems);

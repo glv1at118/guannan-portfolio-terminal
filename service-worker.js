@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/guannan-portfolio-terminal/precache-manifest.8b46809b2c7d220ecf9bf86f1e86de51.js"
+  "/guannan-portfolio-terminal/precache-manifest.befb7f24b40530388e35f436bcb19379.js"
 );
 
 self.addEventListener('message', (event) => {

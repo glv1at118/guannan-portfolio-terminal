@@ -12,9 +12,6 @@ import { componentEnterStack, clearStack } from '../redux/actions.js';
 import store from '../redux/store.js';
 
 export default class Help extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     showMe = () => {
         store.dispatch(componentEnterStack(<Me></Me>));
     }

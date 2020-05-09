@@ -1,3 +1,4 @@
 export const initialState = {
-    guannanStack: []
+    guannanStack: [],
+    terminalScrollTrigger: false
 };

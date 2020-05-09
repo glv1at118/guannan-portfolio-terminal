@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/commandinput.css";
 
-import { componentEnterStack, clearStack } from '../redux/actions.js';
+import { componentEnterStack, clearStack, triggerTerminalScroll } from '../redux/actions.js';
 import { connect } from 'react-redux';
 
 import Contact from './Contact';
@@ -58,6 +58,7 @@ class CommandInput extends React.Component {
                     this.props.componentEnterStack(<Unrecognized></Unrecognized>);
                     break;
             }
+            this.props.triggerTerminalScroll();
             this.setState({
                 currentCommand: ""
             });
@@ -75,7 +76,8 @@ class CommandInput extends React.Component {
 
 let mapDispatchToProps = {
     componentEnterStack: componentEnterStack,
-    clearStack: clearStack
+    clearStack: clearStack,
+    triggerTerminalScroll: triggerTerminalScroll
 };
 
 let connector = connect(null, mapDispatchToProps);

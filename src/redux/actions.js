@@ -11,4 +11,10 @@ function clearStack() {
     };
 }
 
-export { componentEnterStack, clearStack };
+function triggerTerminalScroll(){
+    return {
+        type: "TRIGGER_TERMINAL_SCROLL"
+    };
+}
+
+export { componentEnterStack, clearStack, triggerTerminalScroll };

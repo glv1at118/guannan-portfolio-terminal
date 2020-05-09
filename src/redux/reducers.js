@@ -10,6 +10,9 @@ export default function myReducer(prevState = initialState, action) {
         case "CLEAR_STACK":
             nextState.guannanStack = [];
             return nextState;
+        case "TRIGGER_TERMINAL_SCROLL":
+            nextState.terminalScrollTrigger = !nextState.terminalScrollTrigger;
+            return nextState;
         default:
             return prevState;
     }

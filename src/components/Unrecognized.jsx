@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/unrecognized.css';
 
-export default class Help extends React.Component {
+export default class Unrecognized extends React.Component {
     render() {
         return (
             <div id="unrecognized">> Sorry, but your command has drifted to Mars...&nbsp;

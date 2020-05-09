@@ -4,7 +4,9 @@ import "nes.css/css/nes.min.css";
 import CommandInput from './CommandInput';
 import CurrentListedItems from './CurrentListedItems';
 
-export default class Terminal extends React.Component {
+import { connect } from 'react-redux';
+
+class Terminal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -61,7 +63,6 @@ export default class Terminal extends React.Component {
         }, 4000);
     }
     componentDidUpdate() {
-        // when terminal window updates, scroll the bar to the bottom
         let terminalDOM = this.terminalRef.current;
         terminalDOM.scrollTop = terminalDOM.scrollHeight - terminalDOM.clientHeight;
     }
@@ -84,3 +85,11 @@ export default class Terminal extends React.Component {
         );
     }
 }
+
+const mapStateToProps = function (state) {
+    return {
+        terminalScrollTrigger: state.terminalScrollTrigger
+    };
+};
+
+export default connect(mapStateToProps, null)(Terminal);

@@ -5,7 +5,8 @@ export default class Me extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            selfIntroString: ""
+            selfIntroString: "",
+            timer: -1
         };
     }
 
@@ -19,11 +20,17 @@ export default class Me extends React.Component {
                 selfIntroString: this.state.selfIntroString + currCharStr
             });
             if (i === strArr.length - 1) {
-                clearInterval(timer);
+                clearInterval(this.state.timer);
             } else {
                 i++;
             }
         }, 30);
+        this.setState({
+            timer: timer
+        });
+    }
+    componentWillUnmount() {
+        clearInterval(this.state.timer);
     }
     render() {
         return (

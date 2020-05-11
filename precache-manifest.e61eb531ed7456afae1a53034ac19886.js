@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31b31e4ac485a6dbf9aeb43219820924",
+    "revision": "0bbd4d155622889840e303279b889ef3",
     "url": "/guannan-portfolio-terminal/index.html"
   },
   {

@@ -39,11 +39,11 @@ span.email-mobile {
 }
 
 span.phone-desktop {
-    display: none;
+    display: inline;
 }
 
 span.phone-mobile {
-    display: inline;
+    display: none;
 }
 
 #divider-text {

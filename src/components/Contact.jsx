@@ -23,7 +23,7 @@ export default class Contact extends React.Component {
 
                     <i className="nes-icon whatsapp"></i>
                     <a href="/" target="_blank" rel="noopener noreferrer">
-                        <span className="phone-desktop">289-639-3269</span><span className="phone-mobile">phone</span> <i className="fas fa-external-link-alt"></i>
+                        <span className="phone-desktop">905-519-2561</span><span className="phone-mobile">phone</span> <i className="fas fa-external-link-alt"></i>
                     </a><br />
                 </div>
                 <div id="divider-text">Or leave me an online message:</div>

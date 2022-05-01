@@ -7,6 +7,50 @@ export default class MyApps extends React.Component {
             <ul id="my-apps">
                 <li className="app-item">
                     <div className="nes-container is-rounded side-app with-title">
+                        <p className="title">Simple Trader</p>
+                        <div className="app-img-frame">
+                            {/* <img src={require("../images/app-botanica.jpg")} alt="" height="100%" /> */}
+                        </div>
+                        <p className="app-info">
+                            Simple Trader is an online marketplace platform that provides a convenient way for
+                            people to buy and sell things.<br /><br />
+                            <span>
+                                {/* <a href="https://www.youtube.com/playlist?list=PLiikGnw05G2FjOXuxFUESR3bVamKbJoaa" target="_blank" rel="noopener noreferrer">Demo Video <i className="fas fa-external-link-alt"></i></a> <a href="https://github.com/glv1at118/botanica-server" target="_blank" rel="noopener noreferrer">Source <i className="fas fa-external-link-alt"></i></a> */}
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li className="app-item">
+                    <div className="nes-container is-rounded side-app with-title">
+                        <p className="title">Expense Reimbursement System</p>
+                        <div className="app-img-frame">
+                            {/* <img src={require("../images/app-botanica.jpg")} alt="" height="100%" /> */}
+                        </div>
+                        <p className="app-info">
+                            Expense Reimbursement System manages the process of reimbursing employees for
+                            expenses incurred during company time.<br /><br />
+                            <span>
+                                {/* <a href="https://www.youtube.com/playlist?list=PLiikGnw05G2FjOXuxFUESR3bVamKbJoaa" target="_blank" rel="noopener noreferrer">Demo Video <i className="fas fa-external-link-alt"></i></a> <a href="https://github.com/glv1at118/botanica-server" target="_blank" rel="noopener noreferrer">Source <i className="fas fa-external-link-alt"></i></a> */}
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li className="app-item">
+                    <div className="nes-container is-rounded side-app with-title">
+                        <p className="title">Java Bank</p>
+                        <div className="app-img-frame">
+                            {/* <img src={require("../images/app-botanica.jpg")} alt="" height="100%" /> */}
+                        </div>
+                        <p className="app-info">
+                            Java Bank is a backend banking management system which provides fruitful features for a bank user and admin.<br /><br />
+                            <span>
+                                {/* <a href="https://www.youtube.com/playlist?list=PLiikGnw05G2FjOXuxFUESR3bVamKbJoaa" target="_blank" rel="noopener noreferrer">Demo Video <i className="fas fa-external-link-alt"></i></a> <a href="https://github.com/glv1at118/botanica-server" target="_blank" rel="noopener noreferrer">Source <i className="fas fa-external-link-alt"></i></a> */}
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li className="app-item">
+                    <div className="nes-container is-rounded side-app with-title">
                         <p className="title">Botanica</p>
                         <div className="app-img-frame">
                             <img src={require("../images/app-botanica.jpg")} alt="" height="100%" />

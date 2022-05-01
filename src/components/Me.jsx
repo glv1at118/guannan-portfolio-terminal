@@ -11,7 +11,7 @@ export default class Me extends React.Component {
     }
 
     componentDidMount() {
-        let str = '"Hi! Welcome to my website. I am a self-educated software developer skilled in front end programming, but also have an intense passion in backend development. I like learning new technologies and creating fun stuff. Apart from coding, I also enjoy games modding, cooking, and reading."';
+        let str = '"As an experienced developer who is a core part my project teams, I deliver high quality codes which meet or exceed the requirements. I help you solve problems with web & mobile app development, performance improvements, bug fixing, and even more. My soft skills also guarantee me to output the maximum productivity as well as to support teammates when they need help."';
         let strArr = str.split("");
         let i = 0;
         let timer = setInterval(() => {
@@ -24,7 +24,7 @@ export default class Me extends React.Component {
             } else {
                 i++;
             }
-        }, 30);
+        }, 5);
         this.setState({
             timer: timer
         });
@@ -37,7 +37,7 @@ export default class Me extends React.Component {
             <div className="nes-container with-title is-rounded" id="me">
                 <p className="title">About Guannan Lyu</p>
                 <div id="my-img-frame">
-                    <img src={require("../images/me.jpg")} alt="" height="100%" />
+                    {/* <img src={require("../images/me.jpg")} alt="" height="100%" /> */}
                 </div>
                 <p id="self-description">{this.state.selfIntroString}</p>
             </div>

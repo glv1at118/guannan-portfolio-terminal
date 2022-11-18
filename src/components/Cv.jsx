@@ -13,8 +13,8 @@ export default class Cv extends React.Component {
             <div id="cv" className="nes-container is-rounded">
                 <i className="far fa-file"></i>
                 <a href={this.state.resumeUrl} target="_blank" rel="noopener noreferrer">
-                    <span className="cv-desktop">see my resume</span>
-                    <span className="cv-mobile">resume</span> <i className="fas fa-external-link-alt"></i>
+                    <span className="cv-desktop">See My Resume</span>
+                    <span className="cv-mobile">Resume</span> <i className="fas fa-external-link-alt"></i>
                 </a>
             </div>
         );

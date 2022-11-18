@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68ecda8357bc09c24931d29b89a0ef08",
+    "revision": "6815dad6b004f40f288eb2164b698a79",
     "url": "/guannan-portfolio-terminal/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/guannan-portfolio-terminal/static/css/2.87d4210f.chunk.css"
   },
   {
-    "revision": "e63de79078e4f40798e9",
+    "revision": "459dabaeaa9d583fcf1c",
     "url": "/guannan-portfolio-terminal/static/css/main.69c76cb3.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/guannan-portfolio-terminal/static/js/2.f7f2f1af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e63de79078e4f40798e9",
-    "url": "/guannan-portfolio-terminal/static/js/main.73795db3.chunk.js"
+    "revision": "459dabaeaa9d583fcf1c",
+    "url": "/guannan-portfolio-terminal/static/js/main.47878614.chunk.js"
   },
   {
     "revision": "852294cc866e17a230c6",

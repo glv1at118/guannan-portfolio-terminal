@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Education from './Education';
 import Experience from './Experience';
 import MyApps from './MyApps';
+import News from './News';
 
 import { componentEnterStack, clearStack, triggerTerminalScroll } from '../redux/actions.js';
 import { connect } from 'react-redux';
@@ -16,7 +17,7 @@ class Help extends React.Component {
         this.props.componentEnterStack(<Me></Me>);
         this.props.triggerTerminalScroll();
     }
-    showCv = () => {
+    showResume = () => {
         this.props.componentEnterStack(<Cv></Cv>);
         this.props.triggerTerminalScroll();
     }
@@ -48,6 +49,10 @@ class Help extends React.Component {
         this.props.componentEnterStack(<ConnectedHelp></ConnectedHelp>);
         this.props.triggerTerminalScroll();
     }
+    showNews = () => {
+        this.props.componentEnterStack(<News></News>);
+        this.props.triggerTerminalScroll();
+    }
     clearTerminal = () => {
         this.props.clearStack();
         this.props.triggerTerminalScroll();
@@ -69,10 +74,13 @@ class Help extends React.Component {
                     <span className="help-cmd">'exp'</span>: Experience as a developer. <button type="button" className="nes-btn is-error" onClick={this.showExp}>EXP</button>
                 </li>
                 <li className="help-item">
-                    <span className="help-cmd">'cv'</span>: My curriculum vitae. <button type="button" className="nes-btn" onClick={this.showCv}>CV</button>
+                    <span className="help-cmd">'res'</span>: My resume. <button type="button" className="nes-btn" onClick={this.showResume}>RES</button>
                 </li>
                 <li className="help-item">
                     <span className="help-cmd">'con'</span>: Want to contact? Here it goes. <button type="button" className="nes-btn is-primary" onClick={this.showCon}>CON</button>
+                </li>
+                <li className="help-item">
+                    <span className="help-cmd">'news'</span>: News headlines for refreshing. <button type="button" className="nes-btn is-error" onClick={this.showNews}>NEWS</button>
                 </li>
                 <li className="help-item">
                     <span className="help-cmd">'help'</span>: See a list of commands. <button type="button" className="nes-btn is-success" onClick={this.showHelp}>HELP</button>

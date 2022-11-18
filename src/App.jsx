@@ -4,22 +4,22 @@ import GitCat from './components/GitCat.jsx';
 import "./styles/app.css";
 
 export default class App extends React.Component {
-  render() {
-    return (
-      // <div className="app">
-      //   <GitCat></GitCat>
-      //   <Terminal></Terminal>
-      // </div>
+    render() {
+        return (
+            // <div className="app">
+            //   <GitCat></GitCat>
+            //   <Terminal></Terminal>
+            // </div>
 
-      <div className="app">
-        <div className="bg"></div>
-        <div className="bg bg2"></div>
-        <div className="bg bg3"></div>
-        <GitCat></GitCat>
-        <Terminal></Terminal>
-      </div>
-    );
-  }
+            <div className="app">
+                <div className="bg"></div>
+                <div className="bg bg2"></div>
+                <div className="bg bg3"></div>
+                <GitCat></GitCat>
+                <Terminal></Terminal>
+            </div>
+        );
+    }
 }
 
 /*

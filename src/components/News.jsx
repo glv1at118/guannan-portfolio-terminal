@@ -14,8 +14,7 @@ export default class News extends React.Component {
     getHeadlineNewsList = async (countryCode) => {
         let fetchResult = await fetch(`${this.state.topHeadLinesEndpoint}?country=${countryCode}&pageSize=${this.state.pageSize}`, {
             headers: {
-                Authorization: this.state.apiKey,
-                "Content-Type": "text/plain"
+                Authorization: this.state.apiKey
             }
         });
         if (fetchResult.ok) {
@@ -30,6 +29,7 @@ export default class News extends React.Component {
         return (
             <ul id="my-news">
                 <div className="btn-group-container nes-container is-rounded">
+                    <p className="notice">Free plan of News API is not accessible on production env!</p>
                     <button type="button" className="nes-btn" onClick={() => { this.getHeadlineNewsList("us") }}>US News</button>
                     <button type="button" className="nes-btn" onClick={() => { this.getHeadlineNewsList("ca") }}>CA News</button>
                     <button type="button" className="nes-btn" onClick={() => { this.getHeadlineNewsList("cn") }}>CN News</button>

@@ -12,7 +12,6 @@ import Me from './Me';
 import Unrecognized from './Unrecognized';
 import Experience from './Experience';
 import MyApps from './MyApps';
-import News from './News';
 
 class CommandInput extends React.Component {
     constructor(props) {
@@ -48,9 +47,6 @@ class CommandInput extends React.Component {
                     break;
                 case "con":
                     this.props.componentEnterStack(<Contact></Contact>);
-                    break;
-                case "news":
-                    this.props.componentEnterStack(<News></News>);
                     break;
                 case "help":
                     this.props.componentEnterStack(<Help></Help>);

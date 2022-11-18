@@ -12,11 +12,7 @@ export default class News extends React.Component {
         };
     }
     getHeadlineNewsList = async (countryCode) => {
-        let fetchResult = await fetch(`${this.state.topHeadLinesEndpoint}?country=${countryCode}&pageSize=${this.state.pageSize}`, {
-            headers: {
-                Authorization: this.state.apiKey
-            }
-        });
+        let fetchResult = await fetch(`${this.state.topHeadLinesEndpoint}?apiKey=${this.state.apiKey}&country=${countryCode}&pageSize=${this.state.pageSize}`);
         if (fetchResult.ok) {
             this.setState({
                 headlineNewsList: (await fetchResult.json()).articles

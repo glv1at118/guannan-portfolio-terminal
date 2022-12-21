@@ -13,7 +13,7 @@ export default class Me extends React.Component {
         return (
             <div className="nes-container with-title is-rounded" id="me">
                 <p className="title">About Myself</p>
-                <p className="self-description">What Do I Do: {this.state.roleText}</p>
+                <p className="self-description">What I Do: {this.state.roleText}</p>
                 <p className="self-description">"{this.state.aboutText}"</p>
             </div>
         );

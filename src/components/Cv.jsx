@@ -5,7 +5,7 @@ export default class Cv extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            resumeUrl: "https://drive.google.com/file/d/1Pt13faiqOkes9vqLlVu36b6znWnZz4dU/view?usp=sharing"
+            resumeUrl: "https://github.com/glv1at118/professional-docs/blob/master/Software%20Developer%20Resume_2022.5.1_Guannan.pdf"
         };
     }
     render() {

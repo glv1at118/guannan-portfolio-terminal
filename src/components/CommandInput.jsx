@@ -12,6 +12,7 @@ import Me from './Me';
 import Unrecognized from './Unrecognized';
 import Experience from './Experience';
 import MyApps from './MyApps';
+import Certificate from './Certificate';
 
 class CommandInput extends React.Component {
     constructor(props) {
@@ -44,6 +45,9 @@ class CommandInput extends React.Component {
                     break;
                 case "res":
                     this.props.componentEnterStack(<Cv></Cv>);
+                    break;
+                case "cert":
+                    this.props.componentEnterStack(<Certificate></Certificate>);
                     break;
                 case "con":
                     this.props.componentEnterStack(<Contact></Contact>);

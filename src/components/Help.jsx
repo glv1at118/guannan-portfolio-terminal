@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Education from './Education';
 import Experience from './Experience';
 import MyApps from './MyApps';
+import Certificate from './Certificate';
 
 import { componentEnterStack, clearStack, triggerTerminalScroll } from '../redux/actions.js';
 import { connect } from 'react-redux';
@@ -26,6 +27,10 @@ class Help extends React.Component {
     }
     showMyApps = () => {
         this.props.componentEnterStack(<MyApps></MyApps>);
+        this.props.triggerTerminalScroll();
+    }
+    showCert = () => {
+        this.props.componentEnterStack(<Certificate></Certificate>);
         this.props.triggerTerminalScroll();
     }
     showCon = () => {
@@ -70,6 +75,9 @@ class Help extends React.Component {
                 </li>
                 <li className="help-item">
                     <span className="help-cmd">'res'</span>: My professional resume. <button type="button" className="nes-btn" onClick={this.showResume}>RES</button>
+                </li>
+                <li className="help-item">
+                    <span className="help-cmd">'cert'</span>: My certificates. <button type="button" className="nes-btn is-success" onClick={this.showCert}>CERT</button>
                 </li>
                 <li className="help-item">
                     <span className="help-cmd">'con'</span>: Ways to contact me. <button type="button" className="nes-btn is-primary" onClick={this.showCon}>CON</button>
